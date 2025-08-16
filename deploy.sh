@@ -31,7 +31,7 @@ read -p "Paste the full Ngrok auth command here: " NGROK_AUTH
 bash $NGROK_AUTH
 
 sudo systemctl enable --now xrdp
-sudo systemctl restart gdm3 || true
+
 # open firewall for RDP (ufw)
 sudo apt install -y ufw
 sudo ufw allow 3389/tcp
